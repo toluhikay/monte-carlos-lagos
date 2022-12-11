@@ -402,6 +402,7 @@ header .icons i:hover{
 .other-features-div1{
   width: 100%;
   margin-bottom: 25px;
+  text-align: center;
 }
 .other-features-p{
   font-size: 25px;
@@ -418,10 +419,19 @@ header .icons i:hover{
   height: 400px;
   position: relative;
   flex-wrap: wrap;
+  cursor: pointer;
+  border-radius: 8px;
 }
-.other-features-div img{
+.other-features-div div{
   width: 24%;
+  height: 100%;
+  position: relative;
+}
+
+.other-features-div div img{
+  width: 100%;
   height: 80%;
+  border-radius: 10px;
   position: relative;
 }
 .feature-img-1{
@@ -433,6 +443,34 @@ header .icons i:hover{
   top: 10%;
   left: 0;
   animation: FeatureImg2 4s infinite;
+}
+.feature-p, .feature-p1{
+  position: absolute;
+  display: flex;
+  height: 80%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: #eb434470;
+  color: #f7f7f7;
+  visibility: hidden;
+  font-size: 25px;
+  font-weight: bold;
+  border-radius: 8px;
+}
+.feature-p{
+  top: 0;
+  left: 0;
+  animation: FeatureImg1 4s infinite;
+}
+.feature-p1{
+  top: 10%;
+  left: 0;
+  animation: FeatureImg2 4s infinite;
+}
+
+.other-features-div div:hover .feature-p, .other-features-div div:hover .feature-p1{
+  visibility: visible;
 }
 
 @keyframes FeatureImg1 {
@@ -450,25 +488,12 @@ header .icons i:hover{
   .other-features-div{
     height: auto;
   }
-  .other-features-div img{
+  .other-features-div div{
     width: 100%;
     margin-bottom: 25px;
   }
 }
-.other-features-div2{
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
-}
-.other-features-p2{
-  font-size: 16px;
-  letter-spacing: 1px;
-}
-.other-features-p2 span {
-  font-size: bold;
-  color: var(--red);
-  font-size: 25px;
-}
+
 
 /* book us */
 .book .row{
