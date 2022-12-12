@@ -151,7 +151,7 @@ header .icons i:hover{
   color:var(--red);
   text-transform: uppercase;
   text-shadow: 0 .3rem .5rem rgba(0,0,0,.1);
-  background-color: #f7f7f7;
+  /* background-color: #f7f7f7; */
   padding: 10px;
   border-radius: 20px;
 }
@@ -160,7 +160,7 @@ header .icons i:hover{
   font-size: 2.5rem;
   color:var(--red);
   padding:.5rem 0;
-  background-color: #f7f7f7;
+  /* background-color: #f7f7f7; */
   border-radius: 10px;
 }
 
@@ -674,6 +674,9 @@ header .icons i:hover{
   background:rgba(0,0,0,.7);
   padding:2rem;
   padding-top: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .gallery .box-container .box:hover .content{
@@ -686,7 +689,7 @@ header .icons i:hover{
 }
 
 .gallery .box-container .box .content p{
-  font-size: 1.5rem;
+  font-size: 2rem;
   color:#eee;
   padding:.5rem 0;
 }
@@ -721,6 +724,9 @@ header .icons i:hover{
   letter-spacing: 10px;
 }
 
+.contact{
+  padding: 0;
+}
 
 .review .box .stars i{
   color:var(--red);
