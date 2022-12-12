@@ -47,6 +47,10 @@ var swiper = new Swiper(".review-slider", {
 });
 
 let downloadBtn = document.getElementById('downloadBrochure')
+let formInput1 = document.querySelector('.form-input1')
+let formInput2 = document.querySelector('.form-input2')
+let formInput3 = document.querySelector('.form-input3')
+
 
 function download(){
   axios({
@@ -65,8 +69,15 @@ function download(){
 })
 }
 
-downloadBtn.addEventListener('click', function(){
+downloadBtn.addEventListener('click', function(e){ 
+  if(formInput1.value==='' || formInput2.value==='' || formInput3.value===''){
+    alert(`please fill all the fields in the download form`)
+    return
+  }
   download()
+  formInput1.value =''
+  formInput2.value =''
+  formInput3.value =''
 })
 
 

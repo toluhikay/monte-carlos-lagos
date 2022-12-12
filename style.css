@@ -274,7 +274,7 @@ header .icons i:hover{
 .about-us-h3{
   font-style: italic;
   font-size: 50px;
-  color: var(--red);
+  color: #191919;
   margin-bottom: 30px;
 }
 .about-us-text-p2{
@@ -861,6 +861,9 @@ header .icons i:hover{
       display: flex;
       flex-direction: column;
       align-items: center;
+  }
+  .download-form-div form{
+    width: 100%;
   }
   .fill-p, .download-p{
       font-size: 25px;
