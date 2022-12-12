@@ -342,10 +342,10 @@
         </div>
 
         <div class="box">
-            <img src="https://plus.unsplash.com/premium_photo-1661963885635-2b428cedce28?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fG1hcmluYSUyMGJheXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60" alt="">
+            <img src="assets/images/sicily.jpeg" alt="">
             <div class="content">
                 <p>
-                    The Beautiful Sicily
+                    The Beautiful Sicily 
                 </p>
             </div>
         </div>
@@ -445,10 +445,15 @@
                 <input type="text">
             </div>
             <div class="inputBox">
+                <h3>Realtor</h3>
+                 <label for=""> <input type="radio" checked name="radio"> Yes</label>
+                 <label for=""> <input type="radio" name="radio"> No</label>
+            </div>
+            <div class="inputBox">
                 <h3>Arrival Date</h3>
                 <input type="date">
             </div>
-            <input type="submit" class="btn" value="book now">
+            <input type="submit" class="btn" value="Submit">
         </form>
 
     </div>
@@ -514,6 +519,33 @@
 </section>
 
 <!-- review section ends -->
+
+<!-- form section -->
+<section class="download-form-section">
+    <div class="download-form-section-div">
+        <div class="download-form-div">
+            <p class="started-p">Let's Get Started</p>
+            <p class="fill-p">Fill out our Subscription Forms</p>
+            <button disabled>
+                <a href="" target="_blank" class="fill-a" aria-disabled="true">
+                    COMING SOON <iconify-icon icon="ic:twotone-arrow-right-alt"></iconify-icon>
+                </a>
+            </button>
+        </div>
+        <div class="download-form-div">
+            <p class="download-p">Download Our Brochure</p>
+            <form action="">
+                <input type="text" placeholder="please enter your name" required> <br>
+                <input type="text" placeholder="please enter your email" required> <br>
+                <input type="text" placeholder="phone Number" required> <br>
+                <div>
+                    <button type="button" style="cursor: pointer;" class="download-a" id="downloadBrochure" >Download</button>   
+                </div>
+            </form>
+            
+        </div>
+    </div>
+</section>
 
 <!-- contact section starts  -->
 
@@ -637,7 +669,7 @@
 
 
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
 <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
 
 <!-- custom js file link  -->

@@ -541,16 +541,22 @@ header .icons i:hover{
   display: flex;
   flex-wrap: wrap;
   gap:2rem;
+  width: 100%;
 }
 
 .packages .box-container .box{
-  flex:1 1 30rem;
+  /* flex:1 1 30rem; */
   border-radius: .5rem;
   overflow: hidden;
+  width: 48%;
   box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
   position: relative;
 }
-
+@media screen and (max-width:670px) {
+  .packages .box-container .box{
+    width: 100%;
+  }
+}
 .packages .box-container .box img{
   height: 25rem;
   width:100%;
@@ -571,7 +577,7 @@ header .icons i:hover{
   cursor: pointer;
 }
 .packages .box-container .box:hover .content{
-  background-color: #C3151680;
+  background-color: #C3151690;
   opacity: 1;
 }
 .packages .box-container .box .content h3{
@@ -781,6 +787,84 @@ header .icons i:hover{
 .brand-container{
   text-align: center;
   overflow-x: hidden;
+}
+
+/* download section */
+.download-form-section{
+  width: 100%;
+  padding: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #c4c4c420; */
+}
+.download-form-section-div{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.download-form-div{
+  background: var(--red);
+  width: 49%;
+  padding: 30px;
+  color: #f7f7f7;
+}
+.download-form-div form input{
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+.download-a{
+  width: 25%;
+}
+.started-p{
+  font-size: 14px;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+.fill-p, .download-p{
+  font-size: 35px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+.fill-a{
+  pointer-events: none;
+}
+.fill-a, .download-a{
+  background: #f7f7f7;
+  color: var(--red);
+  font-weight: lighter;
+  font-size: 13px;
+  letter-spacing: 1px;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+}
+@media screen and (max-width:900px) {
+  .download-form-section{
+      padding: 50px 30px;
+  }
+}
+
+@media screen and (max-width:670px) {
+  .download-form-section{
+      padding: 50px 20px;
+  }
+  .download-form-section-div{
+      flex-direction: column;
+  }
+  .download-form-div{
+      margin-bottom: 35px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  .fill-p, .download-p{
+      font-size: 25px;
+  }
 }
 
 /* footer */

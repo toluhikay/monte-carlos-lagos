@@ -46,3 +46,27 @@ var swiper = new Swiper(".review-slider", {
     },
 });
 
+let downloadBtn = document.getElementById('downloadBrochure')
+
+function download(){
+  axios({
+      url:'/assets/document/MonteCarlo.pdf',
+      method:'GET',
+      responseType: 'blob'
+})
+.then((response) => {
+     const url = window.URL
+     .createObjectURL(new Blob([response.data]));
+            const link = document.createElement('a');
+            link.href = url;
+            link.setAttribute('download', 'MonteCarlo.pdf');
+            document.body.appendChild(link);
+            link.click();
+})
+}
+
+downloadBtn.addEventListener('click', function(){
+  download()
+})
+
+
