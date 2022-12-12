@@ -81,3 +81,8 @@ downloadBtn.addEventListener('click', function(e){
 })
 
 
+// footer js
+let year = document.querySelector('.year')
+let date = new Date().getFullYear()
+year.textContent = date
+
